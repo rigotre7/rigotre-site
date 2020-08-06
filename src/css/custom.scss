@@ -1,0 +1,51 @@
+
+.row-top-buffer {
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.image.experience-screenshots {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.social-icon {
+    padding-inline-end: 10px;
+}
+
+.jumbotron.experience-jumbotron {
+    background-color: white;
+}
+
+.row.experience-row {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.modal {
+    padding: 0 !important;
+}
+.modal .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+.modal .modal-content {
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+.modal .modal-body {
+    overflow-y: auto;
+}
