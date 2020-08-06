@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 
 const NavigationBar = () => {
     return (
-        <Navbar sticky="top" bg="dark" variant="dark" expand="sm" >
+        <Navbar sticky="top" variant="light" expand="sm" className="header">
             <Container>
                 <Navbar.Brand href="/">Rodrigo Trejo</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
