@@ -4,13 +4,15 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
 
-import profilePic from "./../images/rtc.jpg";
+import profilePic from "./../assets/rtc.jpg";
+import cv from "./../assets/cv.pdf";
 import SocialLinks from "./SocialLinks";
 
 const ExperienceHeader = () => {
     return (
-        <Jumbotron fluid>
+        <Jumbotron fluid className="no-bottom-margin">
             <Container>
                 <Row>
                     <Col className="col-md-4 col-sm-12 col-12">
@@ -22,6 +24,14 @@ const ExperienceHeader = () => {
                             I enjoy tackling difficult problems and growing through each experience.</p>
                         <h5>UNC Charlotte - BS Computer Science</h5>
                         <SocialLinks/>
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            href={cv}
+                            download="Rodrigo Trejo CV"
+                        >
+                            CV / Resume (PDF)
+                        </Button>
                     </Col>
                 </Row>
             </Container>

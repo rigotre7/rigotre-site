@@ -26,6 +26,10 @@
     background-color: white;
 }
 
+.jumbotron.no-bottom-margin {
+    margin-bottom: 0em;
+}
+
 .row.experience-row {
     margin-top: 35px;
     margin-bottom: 30px;
@@ -48,4 +52,23 @@
 }
 .modal .modal-body {
     overflow-y: auto;
+}
+
+.skills ul {
+    padding-inline-start: 0em;
+}
+
+.skills ul li {
+    list-style: none;
+    display: inline-block;
+    margin-inline-end: 1rem;
+    padding: .5em .5em;
+    margin: 3px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #007bff;
+    color: white;
 }
