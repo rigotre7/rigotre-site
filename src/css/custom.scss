@@ -35,6 +35,14 @@
     margin-bottom: 0em;
 }
 
+.jumbotron.experience-header {
+    margin-bottom: 0em;
+    background-image: url("./../assets/bg-experience-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .row.experience-row {
     margin-top: 35px;
     margin-bottom: 30px;

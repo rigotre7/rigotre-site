@@ -12,7 +12,7 @@ import SocialLinks from "./SocialLinks";
 
 const ExperienceHeader = () => {
     return (
-        <Jumbotron fluid className="no-bottom-margin">
+        <Jumbotron fluid className="experience-header">
             <Container>
                 <Row>
                     <Col className="col-md-4 col-sm-12 col-12">
