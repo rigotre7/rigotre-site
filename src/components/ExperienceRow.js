@@ -32,8 +32,8 @@ const ExperienceRow = (props) => {
                     <p>{props.text}</p>
                     {props.bullets && 
                         <ul>
-                            {props.bullets.map((bulletPoint) => {
-                                return <li>{bulletPoint}</li>
+                            {props.bullets.map((bulletPoint, i) => {
+                                return <li key={i}>{bulletPoint}</li>
                             })}
                         </ul>
                     }
@@ -48,7 +48,7 @@ const ExperienceRow = (props) => {
                 onHide={handleModalClose}
                 centered
             >
-                <Modal.Header closeButton>
+                <Modal.Header className="image-viewer" closeButton>
                 <Modal.Title>{props.header}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
