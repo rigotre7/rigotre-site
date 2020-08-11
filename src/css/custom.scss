@@ -116,3 +116,25 @@
     90%  { bottom:4px; }
     100% {bottom:0;}
 }
+
+.picture-viewer-image-wrapper {
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+
+.picture-viewer-image {
+    position: absolute;
+    filter: grayscale(100%);
+    transition: transform 1s;
+}
+
+.picture-viewer-image:hover {
+    filter: none;
+    transform: scale(1.0639);
+}
+
+.column-no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}

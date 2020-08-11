@@ -1,18 +1,15 @@
 import React from "react";
+import AboutHeader from "../components/AboutHeader";
+import PictureSection from "../components/PictureSection";
 
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
-
-class About extends React.Component {
-    render() {
-        return (
-            <Jumbotron fluid className="no-bottom-margin">
-                <Container>
-                    <h1>About Me</h1>
-                </Container>
-            </Jumbotron>
-        );
-    }
+const About = () => {
+    return (
+        <React.Fragment>
+            <AboutHeader/>
+            <PictureSection/>
+        </React.Fragment>
+        
+    );
 }
 
 export default About;
