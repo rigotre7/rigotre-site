@@ -34,7 +34,13 @@ const PictureViewer = (props) => {
             rowImages.push(
                 <Col key={k} className="column-no-padding">
                     <div className="picture-viewer-image-wrapper">
-                        <Image id={index++} onClick={handleImageClick} style={{height: "450px", width: "450px"}} className="picture-viewer-image" src={image}/>
+                        <Image
+                            id={index++}
+                            onClick={handleImageClick}
+                            style={{width: "100%"}}
+                            className="picture-viewer-image"
+                            src={image}
+                        />
                     </div>
                 </Col>
             );
@@ -59,7 +65,6 @@ const PictureViewer = (props) => {
                 onHide={handleModalClose}
                 centered
                 className="about-me-modal"
-                animation={false}
             >
                 <Modal.Header closeButton>
                 <Modal.Title>{props.header}</Modal.Title>
