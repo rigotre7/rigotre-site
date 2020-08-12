@@ -35,6 +35,31 @@
     border-top-right-radius: 0px;
 }
 
+
+
+.image-viewer-carousel {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-viewer-image {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.about-me-modal .modal-content {
+    background-color: transparent;
+}
+
+.about-me-modal .modal-header {
+    border-bottom: none;
+}
+
 .jumbotron.experience-jumbotron {
     background-color: white;
 }
@@ -132,6 +157,7 @@
 .picture-viewer-image:hover {
     filter: none;
     transform: scale(1.0639);
+    cursor: pointer;
 }
 
 .column-no-padding {
