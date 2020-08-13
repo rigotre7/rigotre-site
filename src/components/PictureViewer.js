@@ -20,44 +20,36 @@ const PictureViewer = (props) => {
     const setImageIndexCallback = (index) => setImageIndex(index);
     const handleModalClose = () => showModal(false);
 
-    const numRows = Math.ceil(props.thumbnails.length / 6);
-    let rows = [];
     let index = 0;
+    let rowImages = [];
 
-    for (let j = 0; j < numRows; j++) {
-        const rowThumbnails = props.thumbnails.slice(j * 6, (j * 6) + 6);
-        let rowImages = [];
-
-        // Insert the image components into the array
-        for (let k = 0; k < rowThumbnails.length; k++) {
-            const image = rowThumbnails[k];
-            rowImages.push(
-                <Col key={k} className="column-no-padding">
-                    <div className="picture-viewer-image-wrapper">
-                        <Image
-                            id={index++}
-                            onClick={handleImageClick}
-                            style={{width: "100%"}}
-                            className="picture-viewer-image"
-                            src={image}
-                        />
-                    </div>
-                </Col>
-            );
-        }
-
-        // Populate the row with the images
-        rows.push((
-            <Row key={j} className="justify-content-md-center" xs={2} sm={2} md={4} lg={4} xl={6}>
-                {rowImages}
-            </Row>
-        ));
+    // Insert the image components into an array of bootstrap columns
+    for (let id = 0; id < props.thumbnails.length; id++) {
+        const image = props.thumbnails[id];
+        rowImages.push(
+            <Col key={id} className="column-no-padding">
+                <div className="picture-viewer-image-wrapper">
+                    <Image
+                        id={index++}
+                        onClick={handleImageClick}
+                        style={{width: "100%"}}
+                        className="picture-viewer-image"
+                        src={image}
+                    />
+                </div>
+            </Col>
+        );
     }
+
+    const row = 
+        <Row className="justify-content-center" xs={2} sm={2} md={3} lg={4} xl={6}>
+            {rowImages}
+        </Row>;
 
     return (
         <Jumbotron fluid>
             <Container fluid>
-                {rows}
+                {row}
             </Container>
             <Modal
                 show={show}

@@ -60,12 +60,11 @@ class ExperienceHeader extends React.Component {
     }
     
     render() {
-        console.warn("render");
         return (
             <Jumbotron id="intro-wrapper" fluid className="experience-header">
                 <Container>
                     <Row>
-                        <Col md={4} className="col-sm-12 col-12">
+                        <Col xs={12} s={12} md={4}>
                             <Image className="image" src={profilePic} rounded/>
                             {this.state.smallScreenAtTopOfPage &&
                                 <FontAwesomeIcon
@@ -76,7 +75,7 @@ class ExperienceHeader extends React.Component {
                                 />
                             }
                         </Col>
-                        <Col md={8} className="col-sm-12 col-12">
+                        <Col xs={12} s={12} md={8}>
                             <div id="scroll-break"></div>
                             <h1>Rodrigo Trejo Contreras</h1>
                             <p>Full-Stack Web Developer focused on developing my skills and working on fun and exciting projects.
