@@ -12,9 +12,10 @@ const importAll = (r) => {
     }).map(r);
 }
 
+const thumbnails = importAll(require.context('./../assets/about/thumbnails', false, /\.(png|jpe?g|svg)$/));
+const fullImages = importAll(require.context('./../assets/about/full', false, /\.(png|jpe?g|svg)$/));
+
 const PictureSection = () => {
-    const thumbnails = importAll(require.context('./../assets/about/thumbnails', false, /\.(png|jpe?g|svg)$/));
-    const fullImages = importAll(require.context('./../assets/about/full', false, /\.(png|jpe?g|svg)$/));
     return (
         <PictureViewer
             thumbnails={thumbnails}
