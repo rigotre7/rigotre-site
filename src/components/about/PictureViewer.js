@@ -20,7 +20,6 @@ const PictureViewer = (props) => {
     const setImageIndexCallback = (index) => setImageIndex(index);
     const handleModalClose = () => showModal(false);
 
-    let index = 0;
     let rowImages = [];
 
     // Insert the image components into an array of bootstrap columns
@@ -31,7 +30,7 @@ const PictureViewer = (props) => {
                 id={id}
                 handleImageClick={handleImageClick}
                 image={image}
-                imageId={index++}
+                imageId={id}
             />
         );
     }
