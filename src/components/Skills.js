@@ -13,7 +13,7 @@ const Skills = ()=> {
         setupFadeInObservor(ref.current);
     });
     return (
-        <Jumbotron fluid className="no-bottom-margin">
+        <Jumbotron fluid className="skills-jumbotron">
             <h1 style={{textAlign: "center"}}>Skills</h1>
             <Container ref={ref} className="fade-in">
                 <Row className="skills">
