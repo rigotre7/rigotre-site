@@ -27,6 +27,7 @@ const PictureViewer = (props) => {
         const image = props.thumbnails[id];
         rowImages.push(
             <PictureBox
+                key={id}
                 id={id}
                 handleImageClick={handleImageClick}
                 image={image}
