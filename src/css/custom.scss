@@ -74,23 +74,29 @@
     padding-top: 0;
 }
 
-.jumbotron.experience-header {
+.jumbotron.about-me-header {
     margin-bottom: 0em;
-    background-image: url("./../assets/bg-experience-header.jpg");
+    background-image: url("./../assets/about/highlands.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .row.experience-row {
     margin-top: 35px;
     margin-bottom: 30px;
-    opacity: 0;
-    transition: opacity 250ms ease-in;
 }
 
-.row.experience-row.appear { 
+.fade-in {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: opacity .5s ease-in, transform .5s ease-in;
+}
+
+.fade-in.appear { 
     opacity: 1;
+    transform: translateY(0);
 }
 
 .modal {
@@ -128,29 +134,6 @@
     border-radius: .25rem;
     background-color: #007bff;
     color: white;
-}
-
-.scroll-button {
-    position: fixed;
-    bottom: 5px;
-    right: 15px;
-    color: #007bff;
-    cursor: pointer;
-    animation:bounce 1s infinite;
-}
-  
-@keyframes bounce {
-    0%   { bottom:0px; }
-    10%  { bottom:4px; }
-    20%  { bottom:8px; }
-    30%  { bottom:12px; }
-    40%  { bottom:16px; }
-    50%  { bottom:20px; }
-    60%  { bottom:16px; }
-    70%  { bottom:12px; }
-    80%  { bottom:8px; }
-    90%  { bottom:4px; }
-    100% {bottom:0;}
 }
 
 .picture-viewer-image-wrapper {

@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Modal from "react-bootstrap/Modal";
-import { experienceRowObservor } from "../util/Observors";
+import { setupFadeInObservor } from "../util/Observors";
 
 const ExperienceRow = (props) => {
 
@@ -14,12 +14,12 @@ const ExperienceRow = (props) => {
 
     useEffect(() => {
         // unobserve cleanup happens after row comes into view
-        experienceRowObservor.observe(ref.current);
+        setupFadeInObservor(ref.current);
     });
 
     return (
         <React.Fragment>
-            <Row ref={ref} className={`experience-row`}>
+            <Row ref={ref} className={`experience-row fade-in`}>
                 <Col className="col-md-6 col-sm-12 col-12">
                     {props.link &&
                         <h5>

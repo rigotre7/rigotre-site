@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { setupFadeInObservor } from "../util/Observors";
 
 const Skills = ()=> {
+    const ref = useRef();
+
+    useEffect(() => {
+        setupFadeInObservor(ref.current);
+    });
     return (
         <Jumbotron fluid className="no-bottom-margin">
             <h1 style={{textAlign: "center"}}>Skills</h1>
-            <Container>
+            <Container ref={ref} className="fade-in">
                 <Row className="skills">
                     <Col className="col-md-6 col-sm-12 col-12">
                         <h3>Languages</h3>

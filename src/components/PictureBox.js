@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import { setupFadeInObservor } from "../util/Observors";
 
 const PictureBox = (props) => {
+    const ref = useRef();
+
+    useEffect(() => {
+        setupFadeInObservor(ref.current);
+    });
     return (
-        <Col className="column-no-padding">
+        <Col ref={ref} key={props.id} className="column-no-padding fade-in">
             <div className="picture-viewer-image-wrapper">
-                <Image style={{height: "450px", width: "450px"}} className="picture-viewer-image" src={props.thumbnail}/>
+                <Image
+                    id={props.imageId}
+                    onClick={props.handleImageClick}
+                    style={{width: "100%"}}
+                    className="picture-viewer-image"
+                    src={props.image}
+                />
             </div>
         </Col>
     )

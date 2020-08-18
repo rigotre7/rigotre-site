@@ -1,17 +1,21 @@
 /**
- * Experience Row
+ * Fade in observor used by several components 
  */
-const experienceRowOptions = {
+const fadeInOptions = {
     threshold: .5,
 };
-
-export const experienceRowObservor = new IntersectionObserver((entries) => {
+ 
+const fadeInObservor = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (!entry.isIntersecting) {
             return;
         } else {
             entry.target.classList.add("appear");
-            experienceRowObservor.unobserve(entry.target);
+            fadeInObservor.unobserve(entry.target);
         }
     });
-}, experienceRowOptions);
+}, fadeInOptions);
+
+export const setupFadeInObservor = (target) => {
+    fadeInObservor.observe(target);
+}

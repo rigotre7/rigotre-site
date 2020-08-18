@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Modal from "react-bootstrap/Modal";
 import ImageViewerCarousel from "./ImageViewerCarousel";
+import PictureBox from "./PictureBox";
 
 const PictureViewer = (props) => {
     const [show, showModal] = useState(false);
@@ -27,17 +28,12 @@ const PictureViewer = (props) => {
     for (let id = 0; id < props.thumbnails.length; id++) {
         const image = props.thumbnails[id];
         rowImages.push(
-            <Col key={id} className="column-no-padding">
-                <div className="picture-viewer-image-wrapper">
-                    <Image
-                        id={index++}
-                        onClick={handleImageClick}
-                        style={{width: "100%"}}
-                        className="picture-viewer-image"
-                        src={image}
-                    />
-                </div>
-            </Col>
+            <PictureBox
+                id={id}
+                handleImageClick={handleImageClick}
+                image={image}
+                imageId={index++}
+            />
         );
     }
 

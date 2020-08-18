@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import ExperienceRow from "./ExperienceRow";
-import maxaveraImage from "./../assets/maxavera.png";
-import analyticsImage from "./../assets/analytics-dashboard-1.png";
-import webSchedulerImage from "./../assets/web-scheduler.JPG";
-import naturenetImage from "./../assets/naturenet.JPG";
+import maxaveraImage from "./../assets/experience/maxavera.png";
+import analyticsImage from "./../assets/experience/analytics.png";
+import webSchedulerImage from "./../assets/experience/webscheduler.JPG";
+import naturenetImage from "./../assets/experience/naturenet.JPG";
 
 const Experience = () => {
     const bulletPoints = [];
@@ -19,15 +19,13 @@ const Experience = () => {
         <Jumbotron fluid className="experience-jumbotron">
             <h1 style={{textAlign: "center"}}>Experience</h1>
             <Container>
-                <Row>
-                    <Col>
+                <Row align="center">
+                    <Col xs={12}>
                         <h3>Prometheus Group - Full-Stack Web Developer</h3>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
+                    <Col xs={12}>
                         <p>Regularly take part in multiple software development phases such as requirement gathering, design, development, and code reviews.</p>
-                    </Col>              
+                    </Col>  
                 </Row>
                 <ExperienceRow
                     image={maxaveraImage}
@@ -50,7 +48,7 @@ const Experience = () => {
                 />
             </Container>
             <Container>
-                <Row>
+                <Row align="center">
                     <Col>
                         <h3>UNC Charlotte - Android Developer</h3>
                     </Col>
