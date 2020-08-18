@@ -1,6 +1,6 @@
 import React from "react";
-import AboutHeader from "../components/AboutHeader";
-import PictureSection from "../components/PictureSection";
+import AboutHeader from "../components/about/AboutHeader";
+import PictureSection from "../components/about/PictureSection";
 
 const About = () => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import PictureViewer from "./PictureViewer";
+import PictureViewer from "./../about/PictureViewer";
 
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -15,8 +15,8 @@ const importAll = (r) => {
     }).map(r);
 }
 
-const thumbnails = importAll(require.context('./../assets/about/thumbnails', false, /\.(png|jpe?g|svg)$/));
-const fullImages = importAll(require.context('./../assets/about/full', false, /\.(png|jpe?g|svg)$/));
+const thumbnails = importAll(require.context('./../../assets/about/thumbnails', false, /\.(png|jpe?g|svg)$/));
+const fullImages = importAll(require.context('./../../assets/about/full', false, /\.(png|jpe?g|svg)$/));
 
 const PictureSection = () => {
     return (

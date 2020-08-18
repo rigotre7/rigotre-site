@@ -4,7 +4,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { setupFadeInObservor } from "../util/Observors";
+import { setupFadeInObservor } from "./../../util/Observors";
 
 const Skills = ()=> {
     const ref = useRef();

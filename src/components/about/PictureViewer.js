@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Modal from "react-bootstrap/Modal";
 import ImageViewerCarousel from "./ImageViewerCarousel";
 import PictureBox from "./PictureBox";
-import { captions } from "../constants/ImageCaptions";
+import { captions } from "../../constants/ImageCaptions";
 
 const PictureViewer = (props) => {
     const [show, showModal] = useState(false);

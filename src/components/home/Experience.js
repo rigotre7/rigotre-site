@@ -5,10 +5,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import ExperienceRow from "./ExperienceRow";
-import maxaveraImage from "./../assets/experience/maxavera.png";
-import analyticsImage from "./../assets/experience/analytics.png";
-import webSchedulerImage from "./../assets/experience/webscheduler.JPG";
-import naturenetImage from "./../assets/experience/naturenet.JPG";
+import maxaveraImage from "./../../assets/experience/maxavera.png";
+import analyticsImage from "./../../assets/experience/analytics.png";
+import webSchedulerImage from "./../../assets/experience/webscheduler.JPG";
+import naturenetImage from "./../../assets/experience/naturenet.JPG";
 
 const Experience = () => {
     const bulletPoints = [];

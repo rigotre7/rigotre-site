@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 
-import cv from "./../assets/experience/cv.pdf";
-import SocialLinks from "./SocialLinks";
+import cv from "./../../assets/experience/cv.pdf";
+import SocialLinks from "./../home/SocialLinks";
 
 const ExperienceHeader = () => {
     return (

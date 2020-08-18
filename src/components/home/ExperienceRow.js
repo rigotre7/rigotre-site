@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Modal from "react-bootstrap/Modal";
-import { setupFadeInObservor } from "../util/Observors";
+import { setupFadeInObservor } from "../../util/Observors";
 
 const ExperienceRow = (props) => {
 

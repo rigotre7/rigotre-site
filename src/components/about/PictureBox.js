@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import { setupFadeInObservor } from "../util/Observors";
+import { setupFadeInObservor } from "../../util/Observors";
 
 const PictureBox = (props) => {
     const ref = useRef();
