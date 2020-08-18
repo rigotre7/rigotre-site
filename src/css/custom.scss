@@ -45,6 +45,12 @@
     max-width: 100%;
 }
 
+.image-viewer-carousel .carousel-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .about-me-modal .modal-content {
     background-color: transparent;
 }
@@ -60,6 +66,14 @@
 
 .jumbotron.skills-jumbotron {
     margin-bottom: 0;
+}
+
+.jumbotron.picture-viewer-jumbotron {
+    background-color: white;
+}
+
+.picture-viewer-desc {
+    padding-top: 30px;
 }
 
 .jumbotron.about-me-header {
