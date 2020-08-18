@@ -32,10 +32,9 @@ const AboutHeader = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xs={12} s={12} md={8} lg={6} xl={6}>
-                            <h1 style={{textAlign: "center"}}>About Me</h1>
-                            <h5 style={{textAlign: "center"}}>
+                            <h3 style={{textAlign: "center"}}>
                                 My name is Rodrigo Trejo Contreras.
-                            </h5>
+                            </h3>
                             <div style={{textAlign: "center"}}>
                                 I'm originally from Durango, Mexico. I believe life is all about experiences and spreading love.
                                 I strive to constantly grow in my profession and as a person. In my free time I like to explore mountains,

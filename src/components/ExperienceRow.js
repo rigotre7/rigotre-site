@@ -58,7 +58,9 @@ const ExperienceRow = (props) => {
                 <Modal.Title>{props.header}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Image className="image" src={props.image} rounded/>
+                    <div className="experience-modal-body">
+                        <Image className="experience-modal-image" src={props.image} rounded/>
+                    </div>
                 </Modal.Body>
             </Modal>
         </React.Fragment>

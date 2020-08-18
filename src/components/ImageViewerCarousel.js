@@ -9,6 +9,10 @@ const ImageViewerCarousel = (props) => {
     return (
         <Carousel className={"image-viewer-carousel"} activeIndex={props.index} onSelect={onSelect}>
             {props.images.map((image, i) => {
+                const caption = props.captions && props.captions[i] ?
+                    props.captions[i].caption : "";
+                const description = props.captions && props.captions[i] ?
+                    props.captions[i].desc : "";
                 return (
                     <Carousel.Item
                         key={i}
@@ -18,10 +22,10 @@ const ImageViewerCarousel = (props) => {
                             src={image}
                             alt={"First slide"}
                         />
-                        {/* <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption> */}
+                        <Carousel.Caption>
+                            <h2>{caption}</h2>
+                            <p>{description}</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                 )
             })}

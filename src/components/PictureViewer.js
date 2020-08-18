@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Modal from "react-bootstrap/Modal";
 import ImageViewerCarousel from "./ImageViewerCarousel";
 import PictureBox from "./PictureBox";
+import { captions } from "../constants/ImageCaptions";
 
 const PictureViewer = (props) => {
     const [show, showModal] = useState(false);
@@ -41,7 +42,7 @@ const PictureViewer = (props) => {
         </Row>;
 
     return (
-        <Jumbotron fluid>
+        <Jumbotron className="picture-viewer-jumbotron" fluid>
             <Container fluid>
                 {row}
             </Container>
@@ -60,6 +61,7 @@ const PictureViewer = (props) => {
                         images={props.fullImages}
                         index={imageIndex}
                         setIndex={setImageIndexCallback}
+                        captions={captions}
                     />
                 </Modal.Body>
             </Modal>

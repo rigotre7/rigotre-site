@@ -1,6 +1,9 @@
 import React from "react";
 import PictureViewer from "./PictureViewer";
 
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+
 const importAll = (r) => {
     return r.keys().sort((a, b) => {
         // Sort the images by name
@@ -17,10 +20,19 @@ const fullImages = importAll(require.context('./../assets/about/full', false, /\
 
 const PictureSection = () => {
     return (
-        <PictureViewer
-            thumbnails={thumbnails}
-            fullImages={fullImages}
-        />
+        <React.Fragment>
+            <Container>
+                <Row className="justify-content-center picture-viewer-desc">
+                    <h1>
+                        Peek Into My Life
+                    </h1>
+                </Row>
+            </Container>
+            <PictureViewer
+                thumbnails={thumbnails}
+                fullImages={fullImages}
+            />
+        </React.Fragment>
     );
 }
 
