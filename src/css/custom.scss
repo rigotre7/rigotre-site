@@ -62,10 +62,16 @@
 
 .jumbotron.experience-jumbotron {
     background-color: white;
+    margin-bottom: 0;
 }
 
 .jumbotron.no-bottom-margin {
-    margin-bottom: 0em;
+    margin-bottom: 0;
+}
+
+.jumbotron.jumbotron-no-padding {
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .jumbotron.experience-header {
@@ -79,7 +85,12 @@
 .row.experience-row {
     margin-top: 35px;
     margin-bottom: 30px;
-    margin-left: 25px;
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.row.experience-row.appear { 
+    opacity: 1;
 }
 
 .modal {

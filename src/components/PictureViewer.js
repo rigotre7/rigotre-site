@@ -42,7 +42,7 @@ const PictureViewer = (props) => {
     }
 
     const row = 
-        <Row className="justify-content-center" xs={2} sm={2} md={3} lg={4} xl={6}>
+        <Row className="justify-content-center" xs={2} sm={2} md={4} lg={4} xl={6}>
             {rowImages}
         </Row>;
 

@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import ExperienceRow from "./ExperienceRow";
-
 import maxaveraImage from "./../assets/maxavera.png";
 import analyticsImage from "./../assets/analytics-dashboard-1.png";
 import webSchedulerImage from "./../assets/web-scheduler.JPG";
@@ -17,7 +16,7 @@ const Experience = () => {
     bulletPoints.push("PRT Capacities – Implemented the ability for users to view resource capacity/usage based on scheduled orders.");
     
     return (
-        <Jumbotron fluid className="experience-jumbotron no-bottom-margin">
+        <Jumbotron fluid className="experience-jumbotron">
             <h1 style={{textAlign: "center"}}>Experience</h1>
             <Container>
                 <Row>
