@@ -25,7 +25,7 @@ class AboutHeader extends React.Component {
         window.addEventListener("scroll", this.stylingFunction);
     }
 
-    componentWillMount() {
+    componentWillUnmount() {
         window.removeEventListener("scroll", this.stylingFunction);
     }
 
