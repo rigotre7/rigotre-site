@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import cv from "./../../assets/experience/cv.pdf";
 import SocialLinks from "./../home/SocialLinks";
 
-const ExperienceHeader = () => {
+const ExperienceIntro = () => {
     return (
         <Jumbotron id="intro-wrapper" fluid className="experience-header">
             <Container>
@@ -34,4 +34,4 @@ const ExperienceHeader = () => {
     ); 
 }
 
-export default ExperienceHeader;
+export default ExperienceIntro;

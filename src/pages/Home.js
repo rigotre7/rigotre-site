@@ -1,13 +1,13 @@
 import React from "react";
 
-import ExperienceHeader from "../components/home/ExperienceHeader";
+import ExperienceIntro from "../components/home/ExperienceIntro";
 import Experience from "../components/home/Experience";
 import Skills from "../components/home/Skills";
 
 const Home = () => {
     return (
         <React.Fragment>
-            <ExperienceHeader/>
+            <ExperienceIntro/>
             <Experience/>
             <Skills/>
         </React.Fragment>
