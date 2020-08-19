@@ -13,15 +13,13 @@ const ExperienceHeader = (props) => {
         setupFadeInObservor(ref.current);
     });
     return (
-        <Row ref={ref} align="center" className="fade-in">
-            <Col xs={12}>
+        <Row ref={ref} align="center" className="justify-content-center fade-in">
+            <Col xs={12} lg={props.shorten ? 6 : 12}>
                 <h3>{props.header}</h3>
-            </Col>
-            {props.subheader &&
-                <Col xs={12}>
+                {props.subheader &&
                     <p>{props.subheader}</p>
-                </Col> 
-            }
+                }
+            </Col>
         </Row>
     );
 }

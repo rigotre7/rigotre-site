@@ -34,6 +34,7 @@ const AboutHeader = () => {
                     subheader={"I'm originally from Durango, Mexico. I believe life is all about experiences and spreading love." + 
                     "I strive to constantly grow in my profession and as a person. In my free time I like to explore mountains," +
                     "visit new places, and chase new thrills."}
+                    shorten={true}
                 />
             </Container>
         </Jumbotron>
