@@ -1,10 +1,9 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 import ExperienceRow from "./ExperienceRow";
+import ExperienceHeader from "./ExperienceHeader";
 import maxaveraImage from "./../../assets/experience/maxavera.png";
 import analyticsImage from "./../../assets/experience/analytics.png";
 import webSchedulerImage from "./../../assets/experience/webscheduler.JPG";
@@ -19,14 +18,10 @@ const Experience = () => {
         <Jumbotron fluid className="experience-jumbotron">
             <h1 style={{textAlign: "center"}}>Experience</h1>
             <Container>
-                <Row align="center">
-                    <Col xs={12}>
-                        <h3>Prometheus Group - Full-Stack Web Developer</h3>
-                    </Col>
-                    <Col xs={12}>
-                        <p>Regularly take part in multiple software development phases such as requirement gathering, design, development, and code reviews.</p>
-                    </Col>  
-                </Row>
+                <ExperienceHeader
+                    header={"Prometheus Group - Full-Stack Web Developer"}
+                    subheader={"Regularly take part in multiple software development phases such as requirement gathering, design, development, and code reviews."}
+                />
                 <ExperienceRow
                     image={maxaveraImage}
                     header={"Maxavera"}
@@ -48,11 +43,9 @@ const Experience = () => {
                 />
             </Container>
             <Container>
-                <Row align="center">
-                    <Col>
-                        <h3>UNC Charlotte - Android Developer</h3>
-                    </Col>
-                </Row>
+                <ExperienceHeader
+                    header={"UNC Charlotte - Android Developer"}
+                />
                 <ExperienceRow
                     image={naturenetImage}
                     header={"NatureNet"}
