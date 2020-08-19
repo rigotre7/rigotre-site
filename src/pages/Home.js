@@ -6,11 +6,11 @@ import Skills from "../components/home/Skills";
 
 const Home = () => {
     return (
-        <React.Fragment>
+        <div className="page-content-wrapper">
             <ExperienceIntro/>
             <Experience/>
             <Skills/>
-        </React.Fragment>
+        </div>
     );
 }
 

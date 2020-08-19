@@ -4,10 +4,10 @@ import PictureSection from "../components/about/PictureSection";
 
 const About = () => {
     return (
-        <React.Fragment>
+        <div className="page-content-wrapper">
             <AboutHeader/>
             <PictureSection/>
-        </React.Fragment>
+        </div>
         
     );
 }
