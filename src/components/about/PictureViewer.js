@@ -54,7 +54,7 @@ const PictureViewer = (props) => {
                 className="about-me-modal"
             >
                 <Modal.Header closeButton>
-                <Modal.Title>{props.header}</Modal.Title>
+                    <Modal.Title>{props.header}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <ImageViewerCarousel

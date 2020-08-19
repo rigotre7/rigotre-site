@@ -20,7 +20,7 @@ const fullImages = importAll(require.context('./../../assets/about/full', false,
 
 const PictureSection = () => {
     return (
-        <React.Fragment>
+        <div style={{height: "calc(100vh - 56px)"}}>
             <Container>
                 <Row className="justify-content-center picture-viewer-desc">
                     <h1>
@@ -32,7 +32,7 @@ const PictureSection = () => {
                 thumbnails={thumbnails}
                 fullImages={fullImages}
             />
-        </React.Fragment>
+        </div>
     );
 }
 

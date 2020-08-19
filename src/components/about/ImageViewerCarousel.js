@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import Carousel from "react-bootstrap/Carousel";
+import { setupHeaderObserver } from "../../util/Observors";
 
 const ImageViewerCarousel = (props) => {
 
+    const ref = useRef();
     const onSelect = (index) => props.setIndex(index);
+    
+    useEffect(() => {
+        setupHeaderObserver(ref.current);
+    });
 
     return (
-        <Carousel className={"image-viewer-carousel"} activeIndex={props.index} onSelect={onSelect}>
+        <Carousel ref={ref} className={"image-viewer-carousel"} activeIndex={props.index} onSelect={onSelect}>
             {props.images.map((image, i) => {
                 const caption = props.captions && props.captions[i] ?
                     props.captions[i].caption : "";
@@ -23,8 +29,8 @@ const ImageViewerCarousel = (props) => {
                             alt={"First slide"}
                         />
                         <Carousel.Caption>
-                            <h2>{caption}</h2>
-                            <p>{description}</p>
+                            <p style={{margin: 0}}>{caption}</p>
+                            <p style={{margin: 0}}>{description}</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 )
