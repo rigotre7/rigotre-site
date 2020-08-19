@@ -13,7 +13,6 @@ const SocialLinks = () => {
                 <FontAwesomeIcon
                     icon={Brands.faLinkedin}
                     size="3x"
-                    className="social-icon"
                 />
             </a>
             <a
@@ -24,7 +23,6 @@ const SocialLinks = () => {
                 <FontAwesomeIcon
                     icon={Brands.faGithub} 
                     size="3x"
-                    className="social-icon"
                 />
             </a>
             <a
@@ -35,7 +33,6 @@ const SocialLinks = () => {
                 <FontAwesomeIcon
                     icon={Brands.faHackerrank} 
                     size="3x"
-                    className="social-icon"
                 />
             </a>
             <a
@@ -46,7 +43,6 @@ const SocialLinks = () => {
                 <FontAwesomeIcon
                     icon={Brands.faStackOverflow} 
                     size="3x"
-                    className="social-icon"
                 />
             </a>
         </ul>
