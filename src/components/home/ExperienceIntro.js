@@ -24,7 +24,7 @@ const ExperienceIntro = () => {
                         <p>Full-Stack Web Developer focused on developing my skills and working on fun and exciting projects.
                             I enjoy tackling difficult problems and growing through each experience.</p>
                         <h4>UNC Charlotte - BS Computer Science</h4>
-                        <SocialLinks/>
+                        <SocialLinks className="social-links"/>
                         <Button
                             variant="primary"
                             size="lg"

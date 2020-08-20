@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as Brands from "@fortawesome/free-brands-svg-icons";
 
-const SocialLinks = () => {
+const SocialLinks = (props) => {
     return (
-        <ul className="list-inline">
+        <ul className={props.className}>
             <a
                 target="_blank"
                 rel="noopener noreferrer"

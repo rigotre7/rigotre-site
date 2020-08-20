@@ -8,6 +8,7 @@ import {
 import NavigationBar from "./components/NavigationBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contact from './components/contact/Contact';
 
 const App = () => {
     return (
@@ -20,6 +21,9 @@ const App = () => {
             </Route>
             <Route path="/about">
                 <About/>
+            </Route>
+            <Route path="/contact">
+                <Contact/>
             </Route>
           </Switch>
         </Router>

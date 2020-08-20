@@ -15,7 +15,8 @@ code {
 }
 
 .page-content-wrapper {
-    padding-top: 54px;
+    margin-top: 56px;
+    height: calc(100vh - 56px);
 }
 
 .image.experience-screenshots {
@@ -24,12 +25,29 @@ code {
     cursor: pointer;
 }
 
-.list-inline {
-    padding-left: 0;
-    list-style: none;
+.social-links {
+    padding: 0;
 
     a {
         padding: 5px;
+    }
+}
+
+.form-control.contact-message {
+    height: 10vh;
+    max-height: 20vh;
+}
+
+.contact-social-links {
+    padding: 0;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .contact-text {
+        text-align: center;
     }
 }
 
@@ -214,3 +232,9 @@ code {
     padding-left: 0px;
     padding-right: 0px;
 }
+
+@media (min-width: 576px) {
+    .body {
+      background-color: lightblue;
+    }
+  }
