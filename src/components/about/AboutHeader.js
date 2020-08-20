@@ -11,14 +11,7 @@ class AboutHeader extends React.Component {
         super(props);
 
         this.ref = React.createRef();
-        this.stylingFunction = this.stylingFunction.bind(this);
-        this.state = {
-            backgroundPosY: 0,
-            backgroundFade: {
-                start: 100,
-                end: 100,
-            }
-        };    
+        this.stylingFunction = this.stylingFunction.bind(this);  
     }
 
     componentDidMount() {
@@ -35,8 +28,8 @@ class AboutHeader extends React.Component {
                 fluid
                 className="about-me-header"
                 style={{
-                    backgroundPosition: `60% ${this.state.backgroundPosY / 10}px`,
-                    backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) ${this.state.backgroundFade.start}%, rgba(255, 255, 255, 1) ${this.state.backgroundFade.end}%), url("${headerImage}")`
+                    backgroundPosition: `60% 0px`,
+                    backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 1) 100%), url("${headerImage}")`
                 }}
                 ref={this.ref}
             >
@@ -58,27 +51,22 @@ class AboutHeader extends React.Component {
         const height = this.ref.current.getBoundingClientRect().height;
         const percentTravel = (scrollPos * -1) / height;
         let end = 100;
+        
         // Only change background properties if our header is in view
         // since that's the only time it matters
         if ((scrollPos * -1) < window.innerHeight) {
             // Threshold for starting to fade the background (63% scrolled this element)
             if (percentTravel > .63) {
                 end = (1 - percentTravel) * 100;
-                this.setState({
-                    backgroundPosY: scrollPos,
-                    backgroundFade: {
-                        start: 0,
-                        end,
-                    },
-                });
+                this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
+                this.ref.current.style.backgroundImage =
+                    `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ` +
+                    `rgba(255, 255, 255, 1) ${end}%), url("${headerImage}")`;
             } else {
-                this.setState({
-                    backgroundPosY: scrollPos,
-                    backgroundFade: {
-                        start: 100,
-                        end: 100,
-                    },
-                })
+                this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
+                this.ref.current.style.backgroundImage =
+                    `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, ` +
+                    `rgba(255, 255, 255, 1) 100%), url("${headerImage}")`;
             }
         }
     }
