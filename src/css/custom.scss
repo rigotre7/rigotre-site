@@ -35,7 +35,8 @@ code {
 
 .form-control.contact-message {
     height: 10vh;
-    max-height: 20vh;
+    min-height: 15vh;
+    max-height: 25vh;
 }
 
 .contact-social-links {
@@ -233,8 +234,6 @@ code {
     padding-right: 0px;
 }
 
-@media (min-width: 576px) {
-    .body {
-      background-color: lightblue;
-    }
-  }
+.invalid-feedback {
+    display: block;
+}
