@@ -5,8 +5,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import { FormContainer as Form } from "./Form";
-import SocialLinks from "../home/SocialLinks";
+import { FormContainer as Form } from "../components/contact/Form";
+import SocialLinks from "../components/home/SocialLinks";
 
 const Contact = () => {
     return (
