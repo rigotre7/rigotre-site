@@ -1,5 +1,4 @@
 import React from "react";
-import emailjs from "emailjs-com";
 
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
@@ -10,7 +9,6 @@ import { FormContainer as Form } from "../components/contact/Form";
 import SocialLinks from "../components/home/SocialLinks";
 
 const Contact = () => {
-    emailjs.init("");
     return (
         <div className="page-content-wrapper">
             <Jumbotron style={{height: "inherit", marginBottom: "0"}}>
