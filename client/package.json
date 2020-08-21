@@ -1,5 +1,6 @@
 {
-  "name": "rigotre-site",
+  "name": "rigotre-site-fe",
+  "description": "the ole fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
