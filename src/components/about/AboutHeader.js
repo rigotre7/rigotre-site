@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import ExperienceHeader from "../home/ExperienceHeader";
 
 import headerImage from "./../../assets/about/highlands.jpg";
+import { ABOUT_ME } from "../../constants/constants";
 
 class AboutHeader extends React.Component {
 
@@ -36,9 +37,7 @@ class AboutHeader extends React.Component {
                 <Container>
                     <ExperienceHeader
                         header={"My name is Rodrigo Trejo Contreras."}
-                        subheader={"I'm originally from Durango, Mexico. I believe life is all about experiences and spreading love." + 
-                        "I strive to constantly grow in my profession and as a person. In my free time I like to explore mountains," +
-                        "visit new places, and chase new thrills."}
+                        subheader={ABOUT_ME}
                         shorten={true}
                     />
                 </Container>
