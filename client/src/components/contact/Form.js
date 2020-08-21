@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFormik } from "formik";
-import emailjs from "emailjs-com";
+import axios from "axios";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -31,6 +31,12 @@ export const FormContainer = () => {
         variant: "danger",
         header: "Message failed to send",
         msg: "Please try again later",
+    };
+    const tooManyReqAlert = {
+        show: true,
+        variant: "warning",
+        header: "Too many messages",
+        msg: "",
     };
     const onSubmit = () => {
         setSubmissionStatus({
@@ -69,8 +75,7 @@ export const FormContainer = () => {
     useEffect(() => {
         if (submissionStatus.submitting) {
             // Send email message
-            emailjs
-            .sendForm("", "", "", "")
+            axios.post("/api/sendMessage", values)
             .then((msg) => {
                 setSubmissionStatus({
                     submitting: false,
@@ -79,15 +84,26 @@ export const FormContainer = () => {
                 if (msg.status === 200) {
                     setAlert(successAlert);
                 }
-            }, (err) => {
+            })
+            .catch((err) => {
                 setSubmissionStatus({
                     submitting: false,
                     complete: true,
                 });
-                setAlert(failAlert);
+                setAlert(
+                    err.response.status === 429 ?
+                    tooManyReqAlert :
+                    failAlert
+                );
             });
         }
-    }, [submissionStatus, successAlert, failAlert]);
+    }, [
+        submissionStatus,
+        successAlert,
+        failAlert,
+        tooManyReqAlert,
+        values
+    ]);
 
     return (
         <React.Fragment>
