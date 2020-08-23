@@ -11,7 +11,7 @@ import SocialLinks from "../components/home/SocialLinks";
 const Contact = () => {
     return (
         <div className="page-content-wrapper">
-            <Jumbotron style={{height: "inherit", marginBottom: "0"}}>
+            <Jumbotron style={{height: "inherit", marginBottom: "0", background: "white"}}>
                 <Container>
                     <h3 style={{textAlign: "center"}}>Contact Me</h3>
                     <Row>
