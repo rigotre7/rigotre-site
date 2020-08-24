@@ -3,11 +3,20 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
+import logo from "./../assets/about/logo.png";
+
 const NavigationBar = () => {
     return (
         <Navbar id="navbar" fixed="top" variant="light" expand="sm" className="header">
             <Container>
-                <Navbar.Brand href="/">Rodrigo Trejo</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <img
+                        src={logo}
+                        width={30}
+                        height={30}
+                        alt={""}
+                    />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
