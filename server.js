@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // only apply to requests that begin with /api/
 app.use("/api/", apiLimiter);
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 // For AWS
 // app.set('trust proxy', 1)
  
@@ -47,9 +49,6 @@ app.post('/api/sendMessage', (req, res) => {
     return res.status(500).json({success: false});
   }
 });
-
-// Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{
