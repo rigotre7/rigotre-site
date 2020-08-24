@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 
 import NavigationBar from "./components/NavigationBar";
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/contact">
                 <Contact/>
             </Route>
+            <Redirect to="/"/>
           </Switch>
         </Router>
       </React.Fragment>
