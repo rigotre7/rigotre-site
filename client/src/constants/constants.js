@@ -78,10 +78,10 @@ export const THUMB_URLS = [
 ];
 
 export const LOGO_URL = "https://ik.imagekit.io/rigotre/about/logo_WsDJfqw5pa.png";
-export const MAXAVERA_URL = "https://ik.imagekit.io/rigotre/experience/maxavera.png";
-export const ANALYTICS_URL = "https://ik.imagekit.io/rigotre/experience/analytics.png";
-export const WS_URL = "https://ik.imagekit.io/rigotre/experience/webscheduler.JPG";
-export const NN_URL = "https://ik.imagekit.io/rigotre/experience/naturenet.JPG";
+export const MAXAVERA_URL = "https://ik.imagekit.io/rigotre/experience/maxavera_FYileZ0eM.png";
+export const ANALYTICS_URL = "https://ik.imagekit.io/rigotre/experience/analytics_RA7AQegcHB.png";
+export const WS_URL = "https://ik.imagekit.io/rigotre/experience/webscheduler_3Cet9WdPea.JPG";
+export const NN_URL = "https://ik.imagekit.io/rigotre/experience/naturenet_ZlK1Wpn9vvE.JPG";
 
 export const ABOUT_ME = "I'm originally from Durango, Mexico. I strive to constantly grow in my profession and as a person. " +
 "In my free time I like to explore mountains, visit new places, and chase new thrills."
