@@ -3,7 +3,6 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import ExperienceHeader from "../home/ExperienceHeader";
 
-import headerImage from "./../../assets/about/highlands.jpg";
 import { ABOUT_ME } from "../../constants/constants";
 
 class AboutHeader extends React.Component {
@@ -30,7 +29,7 @@ class AboutHeader extends React.Component {
                 className="about-me-header"
                 style={{
                     backgroundPosition: `60% 0px`,
-                    backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 1) 100%), url("${headerImage}")`
+                    backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 1) 100%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`
                 }}
                 ref={this.ref}
             >
@@ -60,12 +59,12 @@ class AboutHeader extends React.Component {
                 this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
                 this.ref.current.style.backgroundImage =
                     `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ` +
-                    `rgba(255, 255, 255, 1) ${end}%), url("${headerImage}")`;
+                    `rgba(255, 255, 255, 1) ${end}%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
             } else {
                 this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
                 this.ref.current.style.backgroundImage =
                     `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, ` +
-                    `rgba(255, 255, 255, 1) 100%), url("${headerImage}")`;
+                    `rgba(255, 255, 255, 1) 100%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
             }
         }
     }

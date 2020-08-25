@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 
-import cv from "./../../assets/experience/cv.pdf";
+import cv from "./../../assets/cv.pdf";
 import SocialLinks from "./../home/SocialLinks";
 import { setupFadeInObservor } from "../../util/Observors";
 

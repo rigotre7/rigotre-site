@@ -6,11 +6,11 @@ import Row from "react-bootstrap/Row";
 import Modal from "react-bootstrap/Modal";
 import ImageViewerCarousel from "./ImageViewerCarousel";
 import PictureBox from "./PictureBox";
-import { captions } from "../../constants/constants";
+import { THUMB_URLS } from "../../constants/constants";
 
-const PictureViewer = (props) => {
+const PictureViewer = () => {
     const [show, showModal] = useState(false);
-    const [imageIndex, setImageIndex] = useState(0);
+    const [imageIndex, setImageIndex] = useState(1);
     
     const handleImageClick = (event) => {
         const i = Number(event.target.id);
@@ -23,18 +23,17 @@ const PictureViewer = (props) => {
     let rowImages = [];
 
     // Insert the image components into an array of bootstrap columns
-    for (let id = 0; id < props.thumbnails.length; id++) {
-        const image = props.thumbnails[id];
+    THUMB_URLS.forEach((url, id) => {
         rowImages.push(
             <PictureBox
-                key={id}
+                key={`picutre-box-${id}`}
                 id={id}
                 handleImageClick={handleImageClick}
-                image={image}
+                image={url}
                 imageId={id}
             />
         );
-    }
+    })
 
     const row = 
         <Row className="justify-content-center" xs={2} sm={2} md={4} lg={4} xl={6}>
@@ -53,15 +52,11 @@ const PictureViewer = (props) => {
                 centered
                 className="about-me-modal"
             >
-                <Modal.Header closeButton>
-                    <Modal.Title>{props.header}</Modal.Title>
-                </Modal.Header>
+                <Modal.Header closeButton/>
                 <Modal.Body>
                     <ImageViewerCarousel
-                        images={props.fullImages}
                         index={imageIndex}
                         setIndex={setImageIndexCallback}
-                        captions={captions}
                     />
                 </Modal.Body>
             </Modal>

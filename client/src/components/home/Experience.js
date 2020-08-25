@@ -4,10 +4,6 @@ import Container from "react-bootstrap/Container";
 
 import ExperienceRow from "./ExperienceRow";
 import ExperienceHeader from "./ExperienceHeader";
-import maxaveraImage from "./../../assets/experience/maxavera.png";
-import analyticsImage from "./../../assets/experience/analytics.png";
-import webSchedulerImage from "./../../assets/experience/webscheduler.JPG";
-import naturenetImage from "./../../assets/experience/naturenet.JPG";
 import {
     PG_SUBHEADER,
     MAXAVERA_DESC,
@@ -18,7 +14,11 @@ import {
     ANALYTICS_LINK,
     WS_LINK,
     NN_SUBHEADER,
-    NN_LINK
+    NN_LINK,
+    MAXAVERA_URL,
+    ANALYTICS_URL,
+    WS_URL,
+    NN_URL
 } from "../../constants/constants";
 
 const Experience = () => {
@@ -35,19 +35,19 @@ const Experience = () => {
                     subheader={PG_SUBHEADER}
                 />
                 <ExperienceRow
-                    image={maxaveraImage}
+                    image={MAXAVERA_URL}
                     header={"Maxavera"}
                     text={MAXAVERA_DESC}
                     link={MAXAVERA_LINK}
                 />
                 <ExperienceRow
-                    image={analyticsImage}
+                    image={ANALYTICS_URL}
                     header={"Analytics"}
                     text={ANALYTICS_DESC}
                     link={ANALYTICS_LINK}
                 />
                 <ExperienceRow
-                    image={webSchedulerImage}
+                    image={WS_URL}
                     header={"Web Scheduler"}
                     text={"Wrote custom functionality for Prometheus’ Web Scheduler."}
                     bullets={bulletPoints}
@@ -59,7 +59,7 @@ const Experience = () => {
                     header={"UNC Charlotte - Android Developer"}
                 />
                 <ExperienceRow
-                    image={naturenetImage}
+                    image={NN_URL}
                     header={"NatureNet"}
                     text={NN_SUBHEADER}
                     link={NN_LINK}

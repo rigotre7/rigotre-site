@@ -4,7 +4,7 @@ import PictureViewer from "./../about/PictureViewer";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 
-const PictureSection = (props) => {
+const PictureSection = () => {
     return (
         <React.Fragment>
             <Container>
@@ -14,10 +14,7 @@ const PictureSection = (props) => {
                     </h2>
                 </Row>
             </Container>
-            <PictureViewer
-                thumbnails={props.thumbnails}
-                fullImages={props.fullImages}
-            />
+            <PictureViewer/>
         </React.Fragment>
     );
 }

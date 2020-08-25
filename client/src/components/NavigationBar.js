@@ -2,8 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-
-import logo from "./../assets/about/logo.png";
+import { LOGO_URL } from "../constants/constants";
 
 const NavigationBar = () => {
     return (
@@ -11,7 +10,7 @@ const NavigationBar = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <img
-                        src={logo}
+                        src={LOGO_URL}
                         width={30}
                         height={30}
                         alt={""}
