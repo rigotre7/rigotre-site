@@ -133,10 +133,10 @@ code {
 }
 
 .jumbotron.about-me-header {
-    margin-bottom: 0em;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    min-height: 0px;
     height: 100vh;
 }
 

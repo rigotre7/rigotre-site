@@ -56,15 +56,15 @@ class AboutHeader extends React.Component {
             // Threshold for starting to fade the background (63% scrolled this element)
             if (percentTravel > .63) {
                 end = (1 - percentTravel) * 100;
-                this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
-                this.ref.current.style.backgroundImage =
-                    `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ` +
-                    `rgba(255, 255, 255, 1) ${end}%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
+                // this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
+                // this.ref.current.style.backgroundImage =
+                //     `linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, ` +
+                //     `rgba(255, 255, 255, 1) ${end}%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
             } else {
-                this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
-                this.ref.current.style.backgroundImage =
-                    `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, ` +
-                    `rgba(255, 255, 255, 1) 100%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
+                // this.ref.current.style.backgroundPosition = `60% ${scrollPos / 10}px`;
+                // this.ref.current.style.backgroundImage =
+                //     `linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, ` +
+                //     `rgba(255, 255, 255, 1) 100%), url("https://ik.imagekit.io/rigotre/about/highlands_E0jWK5CxO.jpg")`;
             }
         }
     }
