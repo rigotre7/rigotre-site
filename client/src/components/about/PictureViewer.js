@@ -53,7 +53,7 @@ const PictureViewer = () => {
                 className="about-me-modal"
             >
                 <Modal.Header closeButton/>
-                <Modal.Body>
+                <Modal.Body className="carousel-wrapper">
                     <ImageViewerCarousel
                         index={imageIndex}
                         setIndex={setImageIndexCallback}

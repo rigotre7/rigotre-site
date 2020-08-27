@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
+import { IKImage } from "imagekitio-react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import Modal from "react-bootstrap/Modal";
 import { setupFadeInObservor } from "../../util/Observors";
 
@@ -45,7 +45,13 @@ const ExperienceRow = (props) => {
                     }
                 </Col>
                 <Col className="col-md-6 col-sm-12 col-12">
-                    <Image onClick={handleImageClick} className="image experience-screenshots" src={props.image} rounded/>
+                    <IKImage
+                        publicKey={process.env.REACT_APP_PUBLIC_API_KEY}
+                        urlEndpoint="https://ik.imagekit.io/rigotre"
+                        className="image experience-screenshots"
+                        path={props.image}
+                        onClick={handleImageClick}
+                    />
                 </Col>
             </Row>
             <Modal
@@ -57,9 +63,14 @@ const ExperienceRow = (props) => {
                 <Modal.Header className="image-viewer" closeButton>
                 <Modal.Title>{props.header}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="carousel-wrapper">
                     <div className="experience-modal-body">
-                        <Image className="experience-modal-image" src={props.image} rounded/>
+                        <IKImage
+                            publicKey={process.env.REACT_APP_PUBLIC_API_KEY}
+                            urlEndpoint="https://ik.imagekit.io/rigotre"
+                            className="image experience-screenshots"
+                            path={props.image}
+                        />
                     </div>
                 </Modal.Body>
             </Modal>

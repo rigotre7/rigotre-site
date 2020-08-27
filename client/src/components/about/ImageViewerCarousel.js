@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 import Carousel from "react-bootstrap/Carousel";
+import { IKImage } from "imagekitio-react";
 import { setupHeaderObserver } from "../../util/Observors";
 import {
     CAPTIONS,
@@ -27,10 +28,11 @@ const ImageViewerCarousel = (props) => {
             <Carousel.Item
                 key={`carousel-item-${id}`}
             >
-                <img
-                    className={"mx-auto d-block image-viewer-image"}
-                    src={url}
-                    alt={"First slide"}
+                <IKImage
+                    className="mx-auto d-block image-viewer-image"
+                    publicKey={process.env.REACT_APP_PUBLIC_API_KEY}
+                    urlEndpoint="https://ik.imagekit.io/rigotre"
+                    path={url}
                 />
                 <Carousel.Caption>
                     <p style={{margin: 0}}>{caption}</p>

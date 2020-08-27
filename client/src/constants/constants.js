@@ -55,33 +55,34 @@ export const CAPTIONS = [
 ];
 
 export const FULL_URLS = [
-    "https://ik.imagekit.io/rigotre/about/full/0_XB4X79OZym.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/1_iEHU1Bvob8Z.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/2_WvlumKH-W.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/3_RhCRsYfEMk.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/4_qlQHSPTpi7.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/5_y5UieKccmA.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/6_iDYcIziGlJH.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/7_3A59Jmz6tQ.jpg",
-    "https://ik.imagekit.io/rigotre/about/full/8_400kIcksoPX.jpg",
+    "about/full/0_XB4X79OZym.jpg",
+    "about/full/1_iEHU1Bvob8Z.jpg",
+    "about/full/2_WvlumKH-W.jpg",
+    "about/full/3_RhCRsYfEMk.jpg",
+    "about/full/4_qlQHSPTpi7.jpg",
+    "about/full/5_y5UieKccmA.jpg",
+    "about/full/6_iDYcIziGlJH.jpg",
+    "about/full/7_3A59Jmz6tQ.jpg",
+    "about/full/8_400kIcksoPX.jpg",
 ];
 export const THUMB_URLS = [
-    "https://ik.imagekit.io/rigotre/about/thumbnail/0_3pVdkMIT7Jv.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/1_IabK9xbsV-.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/2_Nlwofy4UQfY.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/3_h3n7CjdlF.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/4_KRxo85P2t.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/5_lrfQIxOpAF.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/6_IvlMkaamRBa.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/7_8JYJB0fjJ6.jpg",
-    "https://ik.imagekit.io/rigotre/about/thumbnail/8_7QCcBlYNfpH.jpg",
+    "about/thumbnail/0_3pVdkMIT7Jv.jpg",
+    "about/thumbnail/1_IabK9xbsV-.jpg",
+    "about/thumbnail/2_Nlwofy4UQfY.jpg",
+    "about/thumbnail/3_h3n7CjdlF.jpg",
+    "about/thumbnail/4_KRxo85P2t.jpg",
+    "about/thumbnail/5_lrfQIxOpAF.jpg",
+    "about/thumbnail/6_IvlMkaamRBa.jpg",
+    "about/thumbnail/7_8JYJB0fjJ6.jpg",
+    "about/thumbnail/8_7QCcBlYNfpH.jpg",
 ];
 
-export const LOGO_URL = "https://ik.imagekit.io/rigotre/about/logo_WsDJfqw5pa.png";
-export const MAXAVERA_URL = "https://ik.imagekit.io/rigotre/experience/maxavera_FYileZ0eM.png";
-export const ANALYTICS_URL = "https://ik.imagekit.io/rigotre/experience/analytics_RA7AQegcHB.png";
-export const WS_URL = "https://ik.imagekit.io/rigotre/experience/webscheduler_3Cet9WdPea.JPG";
-export const NN_URL = "https://ik.imagekit.io/rigotre/experience/naturenet_ZlK1Wpn9vvE.JPG";
+export const HEADER_URL = "about/highlands_E0jWK5CxO.jpg";
+export const LOGO_URL = "about/logo_WsDJfqw5pa.png";
+export const MAXAVERA_URL = "experience/maxavera_FYileZ0eM.png";
+export const ANALYTICS_URL = "experience/analytics_RA7AQegcHB.png";
+export const WS_URL = "experience/webscheduler_3Cet9WdPea.JPG";
+export const NN_URL = "experience/naturenet_ZlK1Wpn9vvE.JPG";
 
 export const ABOUT_ME = "I'm originally from Durango, Mexico. I strive to constantly grow in my profession and as a person. " +
 "In my free time I like to explore mountains, visit new places, and chase new thrills."
