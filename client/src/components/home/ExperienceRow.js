@@ -46,6 +46,7 @@ const ExperienceRow = (props) => {
                 </Col>
                 <Col className="col-md-6 col-sm-12 col-12">
                     <IKImage
+                        style={{borderRadius: "10px"}}
                         publicKey={process.env.REACT_APP_PUBLIC_API_KEY}
                         urlEndpoint="https://ik.imagekit.io/rigotre"
                         className="image experience-screenshots"
